@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Management</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <div id="sidebar">
+      <h1>Admin Panel</h1>
+        <button id="addProductBtn">Add Product</button>
+        <button id="showProductBtn">Show Products</button>
+    </div>
+    <div id="main">
+        <div id="addProductForm" style="display: none;">
+            <h2>Add Product</h2>
+            <form id="productForm">
+                <label for="productName">Name:</label>
+                <input type="text" id="productName" required><br>
+                <label for="productQuantity">Quantity:</label>
+                <input type="number" id="productQuantity" required><br>
+                <label for="productPrice">Price:</label>
+                <input type="number" id="productPrice" required><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="showProductList" style="display: none;">
+            <h2>Product List</h2>
+            <div id="productList"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
